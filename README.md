@@ -1,4 +1,5 @@
 M-am gandit sa fac un site fie despre vanzarea online a unui obiect( masina, carti, sau alte obiecte)
+
 Cerinte:
 -sa vezi site-ul, dar sa nu poti cumpara fara sa te loghezi
 -sa aiba o interfata usor de citit pt utilizator
@@ -16,3 +17,5 @@ Specificatii:
 -daca dai comm, sa apara la obiect in rubrica comm
 -cand dau pe login sa apara inca o pagina doar cu login si password
 -daca apesi 'cumpara' si nu esti logat sa te duca la pagina de login
+
+Site-ul va fi facut in html sau php.
