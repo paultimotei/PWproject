@@ -19,8 +19,8 @@ session_start();
 								<p>Re-enter Password</p>
 								<input type="Password" name="repwd" required>
 								<p>Gendre<br></p>
-								<input type="radio" name="gendre">Male<br>
-								<input type="radio" name="gendre">Female
+								<input type="radio" name="gendre" checked=<?php if($row['gendre'] = "Male") { echo "true"; }?>  value="Male">Male</br>
+								<input type="radio" name="gendre" checked=<?php if($row['gendre'] = "Female") { echo "true"; }?> value="Female">Female</br>
 								<p>Email address</p>
 								<input type="email" name="email" required>
 								<p>Date of Birth</p>
