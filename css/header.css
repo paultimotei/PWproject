@@ -1,0 +1,176 @@
+	body
+{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: sans-serif;
+    background-color: silver;
+}
+
+.container
+{
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
+    background-color: white;
+}
+
+.container .left
+{
+    float: left;
+    width: 40%;
+    height: 200px;
+   background-size: cover;
+   box-sizing: border-box;
+}
+
+.container .right
+{
+	float: left;
+    width: 60%;
+    height: 200px;
+	background-size: cover;
+	box-sizing: border-box;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.all{
+	margin: 0;
+    padding: 0;
+	background: rgba(0,0,0,0.4);
+	opacity: 0.4;
+	height: 800px;
+	width: 100%;
+	position: fixed;
+}
+.listaobiecte{
+	height: 1200px;
+	width: 66%;
+	margin-top: 20px;
+	margin-left: 17%;
+	margin-right: 17%;
+	background-color: blue;
+	position: absolute;
+}
+
+.listaobiecte .obiect{
+	height: 380px;
+	width: 180px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: red;
+	float: left;
+}
+
+.listaobiecte .obiect .poza{
+	height: 180px;
+	width: 160px;
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	background-color: black;
+	float: left;
+}
+
+.listaobiecte .obiect .numecarte{
+	height: 56px;
+	width: 160px;
+	margin-top: 2px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 2px;
+	background-color: black;
+	float: left;
+	text-align: center;
+}
+
+
+.listaobiecte .obiect .numeautor{
+	height: 56px;
+	width: 160px;
+	margin-top: 2px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 2px;
+	background-color: black;
+	float: left;
+	text-align: center;
+}
+
+.listaobiecte .obiect .pret{
+	height: 56px;
+	width: 160px;
+	margin-top: 2px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 2px;
+	background-color: black;
+	float: left;
+	text-align: center;
+}
+.pagination{
+	background-color: green;
+}
+.pagina
+{
+	height: 30px;
+	float: left;
+	border: 2px solid #000;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, .3);
+    background-color: silver;
+    background-opacity: 0.3;
+	width: 64%;
+	margin-top: 1250px;
+	margin-left: 18%;
+	margin-right: 18%;
+	margin-bottom: 50px;
+	text-align: center;
+
+}
+
+.nav{
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+ul {
+ padding: 0px;
+ list-style: none;
+ font-family: arial;
+}
+
+ul li {
+ float: left;
+ width: 200px;
+ height: 100 px;
+ background-color: black;
+ opacity: .5;
+ line-height: 50px;
+ text-align: center;
+ font-size: 30px;
+}
+
+ul li a {
+ text-decoration: none;
+ color: white;
+ display: block;
+}
+
+ul li a:hover {
+ background-color: green;
+}
+
+ul li ul li{
+ display: none;
+}
+
+ul li:hover ul li {
+ display: block;
+}

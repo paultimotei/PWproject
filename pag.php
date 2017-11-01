@@ -2,13 +2,13 @@
 	<html>
         <head>
             <meta charset="utf-8">
-            <link rel="stylesheet" href="stylepag.css">
+            <link rel="stylesheet" href="css\pag.css">
         </head>
         <body>
 	        <div class="container">
                    
                     <div class="left">
-                       <a href="file:///C:/Users/Paul/Desktop/Login.html">
+                       <a href="header.php">
 					   <img src="logo.jpg" height="200" width="100%"></a>
                         </div>
 						<div class="right"><p><b><center><font size="50">Welcome to MyShop.com</font></center></b></p>
@@ -20,15 +20,10 @@
 					<video src="The Joy of Books_1.mp4" autoplay="true" loop="loop" muted="muted" type="video/mp4" height="100%" width="100%" opacity= .3>
 					</div>
 					<ul>
-					<li><a href="file:///C:/Users/Paul/Desktop/pag.html">Home</a></li>		
-					<li><a href="file:///C:/Users/Paul/Desktop/aboutus.html">About</a></li>
-					<li><a href="#">Buy</a>
-						<ul>
-							<li><a href="#">one</a></li>
-							<li><a href="#">two</a></li>
-						</ul>
-					</li>
-					<li><a href="file:///C:/Users/Paul/Desktop/contact.html">Contact</a></li>
+					<li><a href="pag.php">Home</a></li>		
+					<li><a href="aboutus.php">About</a></li>
+					<li><a href="header.php">Buy</a></li>
+					<li><a href="contact.php">Contact</a></li>
 					<li><a href="#">News</a></li>
 					</ul>
 					

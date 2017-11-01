@@ -45,6 +45,6 @@ else{
 
 
 }else{
-	header("Location: ../Login.html?login=nuesubmit");
+	header("Location: ../Login.php?login=nuesubmit");
 	exit();
 }

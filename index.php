@@ -4,7 +4,7 @@ session_start();
 	<html>
         <head>
             <meta charset="utf-8">
-            <link rel="stylesheet" href="styleindex.css">
+            <link rel="stylesheet" href="css\styleindex.css">
         </head>
         <body>
 		

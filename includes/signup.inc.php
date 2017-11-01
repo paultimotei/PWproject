@@ -31,7 +31,7 @@ if(empty($username) || empty($pwd) || empty($repwd) || empty($gendre) || empty($
 }
 else
 {
-	$sql = "SELECT * FROM 'users' WHERE 'user_username'='$username'";
+	$sql = "SELECT * FROM users WHERE user_username='$username'";
 	$result = mysqli_query($conn, $sql);
 	$resultCheck = mysqli_num_rows($result);
 	if($resultCheck > 0)
@@ -43,8 +43,8 @@ else
 	{
 		$hashedPwd= password_hash($pwd,PASSWORD_DEFAULT);
 		$hashedRepwd= password_hash($repwd,PASSWORD_DEFAULT);
-		$sql = "INSERT INTO 'users' (user_username, user_pwd, user_repwd, user_gendre, user_email, user_day, user_mounth, user_year, user_city, user_address) VALUES ('$username','$hashedPwd','$hashedRepwd','$gendre','$email','$day','$mounth','$year','$city','$address')";
-		mysqli_query($conn, $sql);
+		$sql = "INSERT INTO users (user_username, user_pwd, user_repwd, user_gendre, user_email, user_day, user_mounth, user_year, user_city, user_address) VALUES ('$username','$hashedPwd','$hashedRepwd','$gendre','$email','$day','$mounth','$year','$city','$address')";
+		$result = mysqli_query($conn, $sql);
 		header("Location: ../CreareCont.php?CreareCont=success");
 		exit();
 	}

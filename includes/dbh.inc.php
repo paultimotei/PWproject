@@ -9,4 +9,4 @@ $dbName = "loginsystem";
 
 $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword);
 
-@mysqli_select_db($dbName,$conn) or ("Database not found");
+@mysqli_select_db($conn,$dbName) or ("Database not found");

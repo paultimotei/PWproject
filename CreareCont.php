@@ -5,13 +5,13 @@ session_start();
         <head>
             <meta charset="utf-8">
             <title> Sign In </title>
-            <link rel="stylesheet" href="styleCreareCont.css">
+            <link rel="stylesheet" href="css\styleCreareCont.css">
         </head>
         <body>
             <div class="title"><h1>Create new account </h1></div>
                 <div class="container">
-                        <div class="formBox" action="includes/signup.inc.php" method="POST">
-                            <form>
+                        <div class="formBox">
+                            <form action="includes/signup.inc.php" method="POST">
                                 <p>Username</p>
 								<input type="text" name="username" required>
 								<p> Password</p>

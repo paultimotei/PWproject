@@ -1,13 +1,13 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="stylecontact.css">
+		<link rel="stylesheet" href="css\stylecontact.css">
 	</head>
 	
 	<body>
 	<div class="container">
         <div class="left">
-			<a href="file:///C:/Users/Paul/Desktop/Login.html">
+			<a href="Login.php">
 				<img src="logo.jpg" height="200" width="100%"></a>
 		</div>
 			<div class="right"><p><b><center><font size="50">Welcome to MyShop.com</font></center></b></p>
