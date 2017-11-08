@@ -5,7 +5,7 @@
 $con = mysqli_connect('localhost','root','');
 mysqli_select_db($con, 'loginsystem');
 // define how many results you want per page
-$results_per_page = 15;
+$results_per_page = 18;
 // find out the number of results stored in database
 $sql="SELECT * FROM books";
 $result = mysqli_query($con, $sql);
@@ -21,7 +21,7 @@ $number_of_results = mysqli_num_rows($result);
 	// determine the sql LIMIT starting number for the results on the displaying page
 	$this_page_first_result = ($page-1)*$results_per_page;
 	// retrieve selected results from database and display them on page
-	$sql="SELECT * FROM books LIMIT " . $this_page_first_result . ',' .  $results_per_page;
+	$sql="SELECT * FROM books OFFSET " . $this_page_first_result . ' LIMIT ' .  $results_per_page;
 $result = mysqli_query($con, $sql);
 
 // display the links to the pages

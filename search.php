@@ -1,7 +1,7 @@
 	<html>
         <head>
             <meta charset="utf-8">
-            <link rel="stylesheet" href="css\header.css">
+            <link rel="stylesheet" href="css\search.css">
         </head>
         <body>
 	        <div class="container">
@@ -32,7 +32,7 @@
 					$page = (isset($_REQUEST['page']) ? $_REQUEST['page'] : 1);
 
 					include 'includes\dbh.inc.php';
-					$pagesize = 18;
+					$pagesize = 15;
 					$pageoffset = ($page - 1) * $pagesize;
 
 					$sql = sprintf("SELECT * FROM books LIMIT %s OFFSET %s", $pagesize, $pageoffset);
@@ -42,8 +42,18 @@
 							color: white;
 						}
 					</style>
-					<?php if($result = mysqli_query($conn, $sql)): ?>
-						<?php while($row = mysqli_fetch_array($result)): ?>
+						<?php
+						if(isset($_POST['search'])):?>
+							<?php
+							$searchq=$_POST['search'];
+							$sqb="SELECT * FROM books where name LIKE '%$searchq%' OR author LIKE '%$searchq%'";
+							$query = mysqli_query($conn,$sqb) or die("could not search!!!");
+							$count=mysqli_num_rows($query);
+							if($count==0){
+								header("Location: header.php?nusagasitcartea");
+						}else ?>
+						<?php while($row = mysqli_fetch_array($query)): ?>
+
 
 							<a href="carte.php?id=<?php echo $row['id']; ?>" class="obiect">
 								<div class="poza">
@@ -62,11 +72,7 @@
 						<?php endwhile; ?>
 					<?php endif; ?>
 				</div>
-				<div class="pagina">
-					<?php
-					include 'pagination.php'; ?>
-					<a href="header.php?pag=<?php echo ceil($row['id']/18)?>">
-				</div>
+				
 
         </body>
     </html>

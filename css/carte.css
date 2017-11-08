@@ -1,0 +1,190 @@
+  body
+{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: sans-serif;
+    background-color: silver;
+}
+
+.container
+{
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
+    background-color: white;
+}
+
+.container .left
+{
+    float: left;
+    width: 40%;
+    height: 200px;
+   background-size: cover;
+   box-sizing: border-box;
+}
+
+.container .right
+{
+  float: left;
+    width: 60%;
+    height: 200px;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+  
+.listaobiecte{
+  height: 800px;
+  width: 66%;
+  margin-top: 20px;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-bottom: 20px;
+  background-color: none;
+  position: absolute;
+}
+
+.listaobiecte .poza{
+  height: 100%;
+  width: 50%;
+  margin: 0px;
+  background-color: black;
+  float: left;
+}
+.listaobiecte .pdreapta{
+  height: 100%;
+  width: 50%;
+  margin: 0px;
+  background-color: none;
+  float: left;
+}
+.listaobiecte .pdreapta .numecarte{
+  height: 55px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: black;
+  opacity: 0.5;  
+  float: left;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
+}
+
+
+.listaobiecte .pdreapta .numeautor{
+  height: 55px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: black;
+  opacity: 0.5;
+  float: left;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
+}
+
+.listaobiecte .pdreapta .pret{
+  height: 55px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: black;
+  opacity: 0.5;
+  float: left;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
+}
+f
+
+.listaobiecte .pdreapta .descriere{
+  height: 595px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: black;
+  float: left;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
+}
+.buton{
+  height: 20px;
+  width: 120px;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 300px;
+  margin-bottom: 10px;
+  background-color: blue;
+  float: right;
+
+}
+
+.comment{
+  height: 100px;
+  width: 66%;
+  margin-top: 20px;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-bottom: 5px;
+  background-color: blue;
+  float: left;
+}
+.ptcomm{
+  height: 100px;
+   width: 66%;
+  margin-left: 17%;
+  margin-right: 17%;
+  float: left;
+}
+.ptcomm .doneit{
+  height: 20px;
+  width: 100%;
+  background-color: yellow;
+  float: left;
+  border: 2px solid #fff;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
+  position: relative;
+
+}
+.nav{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+ padding: 0px;
+ list-style: none;
+ font-family: arial;
+}
+
+ul li {
+ float: left;
+ width: 200px;
+ height: 100 px;
+ background-color: black;
+ opacity: .5;
+ line-height: 50px;
+ text-align: center;
+ font-size: 30px;
+}
+
+ul li a {
+ text-decoration: none;
+ color: white;
+ display: block;
+}
+
+ul li a:hover {
+ background-color: green;
+}
+
+ul li ul li{
+ display: none;
+}
+
+ul li:hover ul li {
+ display: block;
+}

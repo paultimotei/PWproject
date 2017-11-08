@@ -47,11 +47,12 @@
 	position: fixed;
 }
 .listaobiecte{
-	height: auto;
 	width: 66%;
 	margin-top: 20px;
 	margin-left: 17%;
 	margin-right: 17%;
+	background-color: blue;
+	position: absolute;
 }
 
 .listaobiecte .obiect{
@@ -112,14 +113,31 @@
 	float: left;
 	text-align: center;
 }
+.pagination{
+	background-color: green;
+}
+.pagina
+{
+	height: 30px;
+	float: left;
+	border: 2px solid #000;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, .3);
+    background-color: silver;
+    background-opacity: 0.3;
+	width: 64%;
+	margin-top: 1250px;
+	margin-left: 18%;
+	margin-right: 18%;
+	margin-bottom: 50px;
+	text-align: center;
 
+}
 .nav .search{
 
 	margin-top: 15px;
 	margin-left: 700px;
 	background-color: none;
 	position: absolute;
-	opacity: 0.7;
 }
 
 .nav .search .search-text{
@@ -171,20 +189,4 @@ ul li ul li{
 
 ul li:hover ul li {
  display: block;
-}
-.pagina
-{
-	height: 30px;
-	float: left;
-	border: 2px solid #000;
-    box-shadow: 0px 15px 40px rgba(0, 0, 0, .3);
-    background-color: silver;
-    background-opacity: 0.3;
-	width: 64%;
-	margin-top: 20px;
-	margin-left: 18%;
-	margin-right: 18%;
-	margin-bottom: 30px;
-	text-align: center;
-
 }
